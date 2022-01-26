@@ -8,9 +8,9 @@
       </div>
       <div class="right">
         <h1>Scegli </h1>
-        <div class="img-box">
+        <a class="img-logo" href="http://www.boolean.careers" target="_blank">
           <img src="https://hiringplatform.boolean.careers/images/logo.png" alt="">
-        </div>
+        </a>
       </div>
     </div>
   </div>           
@@ -28,17 +28,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+h1 {
+  font-size: 4rem;
+}
+
 h3 {
   margin: 40px 0 0;
+  font-size: 2rem;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+
 a {
   color: #42b983;
 }
@@ -48,10 +47,11 @@ a {
   background-image: url(http://marvelheroes.altervista.org/wp-content/uploads/2018/05/585f9357cb11b227491c3582.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 500px;
   width: 100%;
+  min-height: 500px;
   padding: 50px 0;
   border: 5px ridge #41b883;
+  overflow-x: none;
 }
 
 .row {
@@ -70,19 +70,12 @@ a {
 .right {
   float: right;
   width : 70%;
+  height: 100%;
 }
 
-.img-box img {
-
+.img-logo img {
   width: 100%;
   background: rgba(255,255,255, 0.5);
 }
 
-h3{
-  font-size: 2rem;
-}
-
-h1 {
-  font-size: 4rem;
-}
 </style>
